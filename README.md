@@ -11,11 +11,9 @@ A movie list App with add to favorate oprion.
 2. Open the project directory in Finder
 
 **Build Instructions:**
-1. Double-click the movieApp.xcodeproj file to open the project in Xcode
-2. Select the appropriate scheme from the scheme selector dropdown menu in the Xcode toolbar
-3. Choose the desired build configuration (e.g., Debug, Release) from the adjacent dropdown menu
-4. Click the "Build" button (hammer icon) in the Xcode toolbar or use the keyboard shortcut ⌘ + B to build the project
-5. Wait for Xcode to finish building the project; any build errors will be displayed in the Issue Navigator pane
+1. Double-click the movieApp.xcworkspace file to open the project in Xcode
+2. Click the "Build" button (hammer icon) in the Xcode toolbar or use the keyboard shortcut ⌘ + B to build the project
+3. Wait for Xcode to finish building the project; any build errors will be displayed in the Issue Navigator pane
 
 **Run Instructions:**
 1. After a successful build, ensure that the correct target is selected from the scheme selector dropdown menu
