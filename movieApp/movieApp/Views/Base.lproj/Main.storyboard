@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0xI-3l-nzr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -370,9 +371,22 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genres:" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WO-h0-iOD">
+                                                <rect key="frame" x="20" y="336" width="58" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTf-av-rmr">
+                                                <rect key="frame" x="20" y="365.5" width="374" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="TTf-av-rmr" firstAttribute="top" secondItem="4WO-h0-iOD" secondAttribute="bottom" constant="10" id="0Ty-ex-iR1"/>
                                             <constraint firstItem="579-pg-ePm" firstAttribute="leading" secondItem="8QB-H6-JFT" secondAttribute="leading" constant="20" id="0mq-u0-toa"/>
                                             <constraint firstAttribute="trailing" secondItem="579-pg-ePm" secondAttribute="trailing" constant="20" id="6oZ-NV-Wdn"/>
                                             <constraint firstItem="sXw-RG-UEE" firstAttribute="top" secondItem="8QB-H6-JFT" secondAttribute="top" constant="8" id="B3k-db-QDq"/>
@@ -381,6 +395,10 @@
                                             <constraint firstItem="Cnu-gB-OKq" firstAttribute="top" secondItem="sXw-RG-UEE" secondAttribute="bottom" constant="20" id="NZN-dd-iaL"/>
                                             <constraint firstItem="579-pg-ePm" firstAttribute="top" secondItem="Cnu-gB-OKq" secondAttribute="bottom" constant="10" id="aaE-ky-DCV"/>
                                             <constraint firstItem="sXw-RG-UEE" firstAttribute="leading" secondItem="8QB-H6-JFT" secondAttribute="leading" constant="8" id="bqC-3e-yGh"/>
+                                            <constraint firstItem="4WO-h0-iOD" firstAttribute="leading" secondItem="8QB-H6-JFT" secondAttribute="leading" constant="20" symbolic="YES" id="mRW-YD-Q6s"/>
+                                            <constraint firstItem="4WO-h0-iOD" firstAttribute="top" secondItem="579-pg-ePm" secondAttribute="bottom" constant="8" symbolic="YES" id="qeX-S9-bJ0"/>
+                                            <constraint firstAttribute="trailing" secondItem="TTf-av-rmr" secondAttribute="trailing" constant="20" id="toF-1d-YjQ"/>
+                                            <constraint firstItem="TTf-av-rmr" firstAttribute="leading" secondItem="8QB-H6-JFT" secondAttribute="leading" constant="20" symbolic="YES" id="zOe-1I-wpQ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -410,6 +428,7 @@
                     </view>
                     <connections>
                         <outlet property="ivBannerImage" destination="sXw-RG-UEE" id="cFD-tA-W4p"/>
+                        <outlet property="lblGenres" destination="TTf-av-rmr" id="GKi-SA-63Y"/>
                         <outlet property="lblMainTitle" destination="JQD-6w-WN1" id="gFo-cs-D3X"/>
                         <outlet property="lblMovieDetails" destination="579-pg-ePm" id="rPm-Kx-r7L"/>
                     </connections>
@@ -519,7 +538,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="0xI-3l-nzr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aVY-Oe-dyi">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -13,7 +13,8 @@ class MovieDetailViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var lblMainTitle: UILabel!
     @IBOutlet weak var ivBannerImage: UIImageView!
     @IBOutlet weak var lblMovieDetails: UILabel!
-
+    @IBOutlet weak var lblGenres: UILabel!
+    
     private var movieDetails = [MovieElement]()
     private var delegate = CustomAppDelegate.shared
 
@@ -31,6 +32,7 @@ class MovieDetailViewController: UIViewController, UIGestureRecognizerDelegate {
         let details = movieDetails[0]
         self.lblMainTitle.text = details.title
         self.lblMovieDetails.text = details.overview
+        self.lblGenres.text = details.genres.joined(separator:", ")
         self.ivBannerImage.sd_setImage(with: URL(string: details.posterPath), completed: nil)
         
         navigationController?.interactivePopGestureRecognizer?.delegate = self
