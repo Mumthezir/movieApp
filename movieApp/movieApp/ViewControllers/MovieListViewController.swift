@@ -26,6 +26,7 @@ class MovieCell: UITableViewCell {
 
 class MovieListViewController: UIViewController, UITableViewDelegate {
     
+    // MARK: - IBOutlets & Vars
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet weak var movieListTableView: UITableView!
     private let api = APIService.shared
@@ -35,6 +36,7 @@ class MovieListViewController: UIViewController, UITableViewDelegate {
     var searchActive : Bool = false
     var favoritedMovieNamesArray = [String]()
     
+    // MARK: - viewDidLoad & viewDidAppear
     override func viewDidLoad() {
         super.viewDidLoad()
         movieListTableView.register(UINib(nibName: "movieCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
@@ -54,7 +56,7 @@ class MovieListViewController: UIViewController, UITableViewDelegate {
         }
     }
     
-    //MARK: - TableView delegates
+    // MARK: - TableView delegates
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movieList.count
     }
@@ -158,7 +160,7 @@ class MovieListViewController: UIViewController, UITableViewDelegate {
     }
 }
     
-//MARK: - Searchbar delegates
+// MARK: - Searchbar delegates
 extension MovieListViewController: UITableViewDataSource, UISearchBarDelegate {
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {

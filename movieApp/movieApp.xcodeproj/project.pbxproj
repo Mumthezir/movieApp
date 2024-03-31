@@ -10,7 +10,6 @@
 		184B988E264380ED0054786C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B988D264380ED0054786C /* Constants.swift */; };
 		184B9891264382F90054786C /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B9890264382F90054786C /* MovieList.swift */; };
 		184B9894264386B70054786C /* CustomAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B9892264386B70054786C /* CustomAppDelegate.swift */; };
-		184B9895264386B70054786C /* CutomAppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B9893264386B70054786C /* CutomAppProtocol.swift */; };
 		184B9897264389AB0054786C /* ToastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B9896264389AB0054786C /* ToastViewController.swift */; };
 		184B989B2643BA450054786C /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B989A2643BA450054786C /* MovieDetailViewController.swift */; };
 		184B989D26442BA70054786C /* MyFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B989C26442BA70054786C /* MyFavoritesViewController.swift */; };
@@ -31,7 +30,6 @@
 		184B988D264380ED0054786C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		184B9890264382F90054786C /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		184B9892264386B70054786C /* CustomAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAppDelegate.swift; sourceTree = "<group>"; };
-		184B9893264386B70054786C /* CutomAppProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CutomAppProtocol.swift; sourceTree = "<group>"; };
 		184B9896264389AB0054786C /* ToastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastViewController.swift; sourceTree = "<group>"; };
 		184B989A2643BA450054786C /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		184B989C26442BA70054786C /* MyFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoritesViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 			children = (
 				184B9890264382F90054786C /* MovieList.swift */,
 				184B9892264386B70054786C /* CustomAppDelegate.swift */,
-				184B9893264386B70054786C /* CutomAppProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,7 +290,6 @@
 				184B989B2643BA450054786C /* MovieDetailViewController.swift in Sources */,
 				1854FCF72643763100C9B391 /* Extension.swift in Sources */,
 				184B988E264380ED0054786C /* Constants.swift in Sources */,
-				184B9895264386B70054786C /* CutomAppProtocol.swift in Sources */,
 				184B9897264389AB0054786C /* ToastViewController.swift in Sources */,
 				908D6D1D2BB935DF005F8965 /* Indicator.swift in Sources */,
 				1854FCF62643763100C9B391 /* Reachability.swift in Sources */,
