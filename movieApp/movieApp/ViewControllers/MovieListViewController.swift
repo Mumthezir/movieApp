@@ -150,6 +150,7 @@ class MovieListViewController: UIViewController, UITableViewDelegate {
         api.getMovieList(lawUrl: url) { response in
             self.movieList = response?.movies ?? []
             DispatchQueue.main.async {
+                self.movieListBeforeSearch = self.movieList
                 self.movieListTableView.reloadData()
                 Indicator.sharedInstance.hideIndicator()
             }
@@ -162,7 +163,6 @@ extension MovieListViewController: UITableViewDataSource, UISearchBarDelegate {
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchActive = true
-        movieListBeforeSearch = movieList
     }
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         searchActive = false
@@ -175,7 +175,7 @@ extension MovieListViewController: UITableViewDataSource, UISearchBarDelegate {
         searchBar.resignFirstResponder()
         movieListTableView.resignFirstResponder()
         self.searchBar.showsCancelButton = false
-        movieListCall()
+        self.movieList = movieListBeforeSearch
         movieListTableView.reloadData()
     }
     

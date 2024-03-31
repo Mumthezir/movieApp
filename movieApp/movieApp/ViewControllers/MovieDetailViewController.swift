@@ -24,7 +24,7 @@ class MovieDetailViewController: UIViewController, UIGestureRecognizerDelegate {
 
     func setUpView() {
         self.ivBannerImage.setCorner(radius: 8)
-        self.ivBannerImage.contentMode = .scaleAspectFill
+        self.ivBannerImage.contentMode = .scaleAspectFit
         self.lblMovieDetails.textAlignment  = .justified
         
         self.movieDetails = delegate.getMovieDetails()
